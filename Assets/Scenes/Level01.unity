@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 63078254}
   - component: {fileID: 63078253}
   - component: {fileID: 63078252}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bird
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -842,7 +842,7 @@ GameObject:
   - component: {fileID: 1455733330}
   - component: {fileID: 1455733329}
   - component: {fileID: 1455733328}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Platforms - tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
