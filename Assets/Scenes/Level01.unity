@@ -12264,6 +12264,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSFX:
     coinPickup: {fileID: 8300000, guid: 74a44ef2ff12c674a84da7f4fdaf7576, type: 3}
+    fail: {fileID: 8300000, guid: 2762c6377da902b478b0683d849e926a, type: 3}
 --- !u!4 &1426792384 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1560610336365645469, guid: d45b634bfc4deb44b9199f167a491a12,
