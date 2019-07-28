@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
+    Rigidbody2D rb;
+    Animator anim;
+
+    void Start () {
+        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+    }
     void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.CompareTag("Bone")) {
             SFXManager.instance.ShowBoneParticles(other.gameObject);
