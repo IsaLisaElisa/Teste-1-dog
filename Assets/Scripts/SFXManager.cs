@@ -6,7 +6,7 @@ public class SFXManager : MonoBehaviour
 {
     public static SFXManager instance = null;
 
-    public GameObject coinParticles;
+    public GameObject boneParticles;
     public GameObject dieParticles;
 
 
@@ -16,8 +16,8 @@ public class SFXManager : MonoBehaviour
     }
 }
 
-    public void ShowCoinParticles(GameObject obj) {
-        GameObject particles = Instantiate(coinParticles, obj.transform.position, Quaternion.identity);
+    public void ShowBoneParticles(GameObject obj) {
+        GameObject particles = Instantiate(boneParticles, obj.transform.position, Quaternion.identity);
         GameObject tape = GameObject.Find("Tape");
         particles.transform.SetParent(tape.transform);
     }

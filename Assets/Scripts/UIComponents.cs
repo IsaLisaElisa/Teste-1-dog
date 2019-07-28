@@ -11,7 +11,7 @@ public class UIComponents
     public class Hud {
 
         [Header("Text")]
-        public Text txtCoinCount;
+        public Text txtBoneCount;
 
         [Header("Other")]
         public GameObject panelHud;

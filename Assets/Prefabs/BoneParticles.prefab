@@ -1362,8 +1362,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.9960785, g: 0.80392164, b: 0, a: 1}
-        key1: {r: 1, g: 1, b: 0, a: 0}
+        key0: {r: 0.4056604, g: 0.40012333, b: 0.376958, a: 1}
+        key1: {r: 0.4039216, g: 0.40000004, b: 0.37647063, a: 0}
         key2: {r: 1, g: 1, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -4711,7 +4711,7 @@ MonoBehaviour:
 --- !u!199 &6591656903652119243
 ParticleSystemRenderer:
   serializedVersion: 6
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}

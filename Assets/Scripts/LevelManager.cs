@@ -31,12 +31,12 @@ public class LevelManager : MonoBehaviour
 
     }
 
-    public void IncrementCoinCount() {
-        sceneData.coinCount++;
+    public void IncrementBoneCount() {
+        sceneData.boneCount++;
     }
 
     void DisplayHudData() {
-        uiComponents.hud.txtCoinCount.text = "x " + sceneData.coinCount;
+        uiComponents.hud.txtBoneCount.text = "x " + sceneData.boneCount;
 
     }
 
@@ -46,11 +46,11 @@ public class LevelManager : MonoBehaviour
 
     public void ShowLevelCompletePanel() {
         uiComponents.levelCompletePanel.panel.SetActive(true);
-        uiComponents.levelCompletePanel.txtScore.text = "" + sceneData.coinCount;
+        uiComponents.levelCompletePanel.txtScore.text = "" + sceneData.boneCount;
     }
 
     public void ShowGameOverPanel() {
         uiComponents.gameOverPanel.panel.SetActive(true);
-        uiComponents.gameOverPanel.txtScore.text = "" + sceneData.coinCount;
+        uiComponents.gameOverPanel.txtScore.text = "" + sceneData.boneCount;
     }
 }

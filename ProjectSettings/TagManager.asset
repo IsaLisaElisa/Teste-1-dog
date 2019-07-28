@@ -9,6 +9,7 @@ TagManager:
   - Projectile
   - Forbidden
   - Gift
+  - Bone
   layers:
   - Default
   - TransparentFX
