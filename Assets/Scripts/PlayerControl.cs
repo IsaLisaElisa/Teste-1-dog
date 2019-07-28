@@ -7,9 +7,12 @@ public class PlayerControl : MonoBehaviour
     Rigidbody2D rb;
     Animator anim;
 
+    private Animator dogAnimator;
+
     void Start () {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        dogAnimator = GetComponent<Animator>();
     }
     void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.CompareTag("Bone")) {
@@ -25,9 +28,11 @@ public class PlayerControl : MonoBehaviour
             LevelManager.instance.ShowLevelCompletePanel();
         }
         else if (other.gameObject.layer == LayerMask.NameToLayer("Enemies")) {
+            anim.SetTrigger("death");
             KillPlayer();
         }
         else if (other.gameObject.layer == LayerMask.NameToLayer("Forbidden")) {
+            anim.SetTrigger("death");
             KillPlayer();
         }
     }
@@ -39,9 +44,6 @@ public class PlayerControl : MonoBehaviour
     void KillPlayer() {
         StopMusicAndTape();
         AudioManager.instance.PlaySoundFail(gameObject);
-        SFXManager.instance.ShowDieParticles(gameObject);
-        Destroy(gameObject);
         LevelManager.instance.ShowGameOverPanel();
     }
-
 }

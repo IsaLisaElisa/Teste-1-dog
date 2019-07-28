@@ -31,12 +31,14 @@ public class MoveByRigidBody : MonoBehaviour
 
 void Animating(float horizontalInput, float verticalInput) {
     bool walking = horizontalInput != 0f;
-    anim.SetInteger("state", 1);
+    anim.SetInteger("state", 2);
+    LevelManager.instance.SetTapeSpeed(-3);
     if (horizontalInput == 0f) {
-        anim.SetInteger("state", 0);
+        anim.SetInteger("state", 1);
+        LevelManager.instance.SetTapeSpeed(0); 
     }
     if (verticalInput != 0f) {
-        anim.SetInteger("state", 2);
+        anim.SetInteger("state", 3);
     }
 }
 
