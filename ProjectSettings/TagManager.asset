@@ -10,6 +10,7 @@ TagManager:
   - Forbidden
   - Gift
   - Bone
+  - Pegada
   layers:
   - Default
   - TransparentFX
