@@ -2,32 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FocinhoControl : MonoBehaviour
+public class PatasControl : MonoBehaviour
 {
     public GameObject player;
 
-    MoveToRef script;
     Animator anim;
 
     void Start()
     {
-        script = player.GetComponent<MoveToRef>();
         anim = player.GetComponent<Animator>();
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Platforms")) {
-            script.encostado = true;
-            anim.SetInteger("state", 3);
+            anim.SetInteger("state", 1);
         }
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Platforms")) {
-            script.encostado = false;
-            anim.SetInteger("state", 1);
+            anim.SetInteger("state", 2);
         }
     }
+
 }
