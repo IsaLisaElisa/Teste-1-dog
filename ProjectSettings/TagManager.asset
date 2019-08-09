@@ -11,6 +11,7 @@ TagManager:
   - Gift
   - Bone
   - Pegada
+  - Obstacles
   layers:
   - Default
   - TransparentFX
