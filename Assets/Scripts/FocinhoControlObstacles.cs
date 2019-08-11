@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FocinhoControlObstacles : MonoBehaviour
 {
-     public GameObject player;
+    public GameObject player;
 
     MoveToRef script;
     Animator anim;
