@@ -17,7 +17,7 @@ public class FocinhoControl : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Platforms")) {
+        if (other.gameObject.layer == LayerMask.NameToLayer("Platforms") || other.gameObject.layer == LayerMask.NameToLayer("Obstacles")) {
             script.encostado = true;
             anim.SetInteger("state", 3);
         }
@@ -25,7 +25,7 @@ public class FocinhoControl : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Platforms")) {
+        if (other.gameObject.layer == LayerMask.NameToLayer("Platforms") || other.gameObject.layer == LayerMask.NameToLayer("Obstacles")) {
             script.encostado = false;
             anim.SetInteger("state", 1);
         }

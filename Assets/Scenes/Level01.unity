@@ -8352,7 +8352,6 @@ GameObject:
   - component: {fileID: 1090496525}
   - component: {fileID: 1090496527}
   - component: {fileID: 1090496526}
-  - component: {fileID: 1090496528}
   m_Layer: 8
   m_Name: Patas
   m_TagString: Untagged
@@ -8403,19 +8402,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.078438975, y: -0.2451209}
   m_Size: {x: 0.84312415, y: 0.5097597}
   m_Direction: 1
---- !u!114 &1090496528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1090496524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 166cd88b857bc304180c32eb7e8602a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 890307760}
 --- !u!1001 &1100902200
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22487,7 +22473,6 @@ GameObject:
   - component: {fileID: 1753570190}
   - component: {fileID: 1753570192}
   - component: {fileID: 1753570191}
-  - component: {fileID: 1753570193}
   m_Layer: 8
   m_Name: Focinho
   m_TagString: Untagged
@@ -22538,19 +22523,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.13032055, y: 0.065160155}
   m_Size: {x: 0.7606411, y: 0.7606411}
   m_Direction: 0
---- !u!114 &1753570193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1753570189}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22996e52e36f8b84993af76d7c4bafa0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 890307760}
 --- !u!1 &1759216220 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8521723726735112483, guid: 9398c295e236312498704d3171d30b52,

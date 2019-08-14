@@ -9,6 +9,7 @@ public class MoveToRef : MonoBehaviour
     public float force = 10f;
 
     public bool encostado = false;
+    public bool noChao = false;
 
     private Rigidbody2D rb;
 
@@ -27,9 +28,11 @@ public class MoveToRef : MonoBehaviour
             transform.position = Vector3.Lerp(initialPosition, finalPosition, lerpRate * Time.deltaTime);
         }
 
-        if (Input.GetButtonDown("Fire1"))
-        {
-            Impulse(force);
+        if (noChao) {
+            if (Input.GetButtonDown("Fire1"))
+            {
+                Impulse(force);
+            }
         }
     }
 
