@@ -1,9 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerControl : MonoBehaviour
 {
+    int life = 3;
+
+    public Text TextLife;
     Rigidbody2D rb;
     Animator anim;
 
@@ -13,6 +17,7 @@ public class PlayerControl : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         dogAnimator = GetComponent<Animator>();
+        TextLife.text = life.ToString();
     }
     void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.CompareTag("Bone")) {
@@ -21,15 +26,21 @@ public class PlayerControl : MonoBehaviour
             Destroy(other.gameObject);
             LevelManager.instance.IncrementBoneCount();
         }
-        if (other.gameObject.CompareTag("Gift")) {
+        else if (other.gameObject.CompareTag("Gift")) {
             StopMusicAndTape();
             AudioManager.instance.PlaySoundLevelComplete(gameObject);
             Destroy(gameObject);
             LevelManager.instance.ShowLevelCompletePanel();
         }
+        else if (other.gameObject.CompareTag("Life")) {
+            if (life < 3) {
+                life++;
+                TextLife.text = life.ToString();
+            }
+        }
         else if (other.gameObject.layer == LayerMask.NameToLayer("Enemies")) {
             anim.SetTrigger("death");
-            KillPlayer();
+            HurtPlayer();
         }
         else if (other.gameObject.layer == LayerMask.NameToLayer("Forbidden")) {
             anim.SetTrigger("death");
@@ -41,6 +52,15 @@ public class PlayerControl : MonoBehaviour
         Camera.main.GetComponentInChildren<AudioSource>().mute = true;
         LevelManager.instance.SetTapeSpeed(0);  
     }
+
+    void HurtPlayer() {
+        life--;
+        TextLife.text = life.ToString();
+        if (life == 0){
+            KillPlayer();
+        }
+    }
+
     void KillPlayer() {
         Destroy(gameObject);
         StopMusicAndTape();

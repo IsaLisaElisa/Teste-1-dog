@@ -37,7 +37,6 @@ public class LevelManager : MonoBehaviour
 
     void DisplayHudData() {
         uiComponents.hud.txtBoneCount.text = "x " + sceneData.boneCount;
-
     }
 
     public void SetTapeSpeed(float value) {

@@ -4,6 +4,7 @@ using UnityEngine;
 using System;
 using UnityEngine.UI;
 
+
 [Serializable]
 public class UIComponents 
 {
@@ -12,6 +13,8 @@ public class UIComponents
 
         [Header("Text")]
         public Text txtBoneCount;
+
+        public Text txtLifeCount;
 
         [Header("Other")]
         public GameObject panelHud;

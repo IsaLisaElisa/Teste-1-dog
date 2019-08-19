@@ -6543,6 +6543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e70b3172457f3743b889ce8b4c16845, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TextLife: {fileID: 995061132}
 --- !u!114 &890307762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7480,7 +7481,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: x 0
+  m_Text: x 3
 --- !u!222 &995061133
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8884,10 +8885,10 @@ RectTransform:
   m_Father: {fileID: 1230234843}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1131, y: -37.899994}
-  m_SizeDelta: {x: 244.2, y: 51.5}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -149, y: -37.899994}
+  m_SizeDelta: {x: 244.19995, y: 51.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1176803789
 MonoBehaviour:
@@ -10479,6 +10480,7 @@ MonoBehaviour:
   uiComponents:
     hud:
       txtBoneCount: {fileID: 1605295674}
+      txtLifeCount: {fileID: 995061132}
       panelHud: {fileID: 1230234842}
     levelCompletePanel:
       txtScore: {fileID: 2058757299}
