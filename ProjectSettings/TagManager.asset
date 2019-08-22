@@ -5,13 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - Coin
-  - Ghost
   - Projectile
   - Forbidden
   - Gift
   - Bone
   - Pegada
   - Obstacles
+  - Life
+  - Car
+  - Ghost
   layers:
   - Default
   - TransparentFX
