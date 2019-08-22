@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: carblue1
+  m_Name: carblue2
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,9 +20,9 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 13141ca73cac5ef439bbf0578e53ceb8, type: 3}
+      value: {fileID: 21300000, guid: 38bfae9e44d43ac4294aaa9a14b22bad, type: 3}
     - time: 0.2
-      value: {fileID: 21300000, guid: dd4d6c66edd6d124a9ef0e404e879916, type: 3}
+      value: {fileID: 21300000, guid: 94e839c3547e5be48a4909342b73741b, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -42,8 +42,8 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 13141ca73cac5ef439bbf0578e53ceb8, type: 3}
-    - {fileID: 21300000, guid: dd4d6c66edd6d124a9ef0e404e879916, type: 3}
+    - {fileID: 21300000, guid: 38bfae9e44d43ac4294aaa9a14b22bad, type: 3}
+    - {fileID: 21300000, guid: 94e839c3547e5be48a4909342b73741b, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

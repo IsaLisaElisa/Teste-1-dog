@@ -39,11 +39,9 @@ public class PlayerControl : MonoBehaviour
             }
         }
         else if (other.gameObject.layer == LayerMask.NameToLayer("Enemies")) {
-            anim.SetTrigger("death");
             HurtPlayer();
         }
         else if (other.gameObject.layer == LayerMask.NameToLayer("Forbidden")) {
-            anim.SetTrigger("death");
             KillPlayer();
         }
     }
