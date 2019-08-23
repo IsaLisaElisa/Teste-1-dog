@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5223480335297050313
+--- !u!1 &8806952436486993831
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,10 +8,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4444065871131053762}
-  - component: {fileID: 1391699779584482062}
-  - component: {fileID: 5983178511092475646}
-  - component: {fileID: 168927200450347891}
+  - component: {fileID: 5366997336665352599}
+  - component: {fileID: 6648805616591058203}
+  - component: {fileID: 3884984496758065979}
+  - component: {fileID: 8954801290091498823}
   m_Layer: 0
   m_Name: hydrant
   m_TagString: Obstacles
@@ -19,27 +19,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4444065871131053762
+--- !u!4 &5366997336665352599
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5223480335297050313}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.56, y: -1.33, z: 0}
-  m_LocalScale: {x: 0.0437697, y: 0.051073186, z: 1}
+  m_GameObject: {fileID: 8806952436486993831}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -16.726244, y: 0.2860101, z: 0}
+  m_LocalScale: {x: 0.32873905, y: 0.34048823, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1391699779584482062
+--- !u!212 &6648805616591058203
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5223480335297050313}
+  m_GameObject: {fileID: 8806952436486993831}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -67,9 +67,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1558941485
-  m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 3afe95e47a2a1e347841a71ca393e431, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -81,30 +81,30 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &5983178511092475646
+--- !u!70 &3884984496758065979
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5223480335297050313}
+  m_GameObject: {fileID: 8806952436486993831}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.20624955, y: 0.89402324}
-  m_Size: {x: 17.265873, y: 28.857492}
+  m_Offset: {x: -0.12572095, y: 0.42483246}
+  m_Size: {x: 21.22701, y: 29.618425}
   m_Direction: 0
---- !u!50 &168927200450347891
+--- !u!50 &8954801290091498823
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5223480335297050313}
+  m_GameObject: {fileID: 8806952436486993831}
   m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 1
