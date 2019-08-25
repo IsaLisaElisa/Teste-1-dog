@@ -7,9 +7,11 @@ using System;
 
 public class AudioSFX 
 {
-    public AudioClip coinPickup;
+    public AudioClip BonePickup;
     public AudioClip fail;
     public AudioClip levelComplete;
+    public AudioClip lifePickup;
+    public AudioClip lifeLost;
     
 }
  
