@@ -22,7 +22,7 @@ public class PlayerControl : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.CompareTag("Bone")) {
             SFXManager.instance.ShowBoneParticles(other.gameObject);
-            AudioManager.instance.PlaySoundCoinPickup(other.gameObject);
+            AudioManager.instance.PlaySoundBonePickup(other.gameObject);
             Destroy(other.gameObject);
             LevelManager.instance.IncrementBoneCount();
         }
@@ -36,6 +36,7 @@ public class PlayerControl : MonoBehaviour
             if (life < 3) {
                 life++;
                 TextLife.text = life.ToString();
+                Destroy(other.gameObject);
             }
         }
         else if (other.gameObject.layer == LayerMask.NameToLayer("Enemies")) {
