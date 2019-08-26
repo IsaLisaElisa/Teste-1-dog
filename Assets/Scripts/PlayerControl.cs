@@ -22,7 +22,7 @@ public class PlayerControl : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.CompareTag("Bone")) {
             SFXManager.instance.ShowBoneParticles(other.gameObject);
-            AudioManager.instance.PlaySoundBonePickup(other.gameObject);
+            AudioManager.instance.PlaySoundbonePickup(other.gameObject);
             Destroy(other.gameObject);
             LevelManager.instance.IncrementBoneCount();
         }
