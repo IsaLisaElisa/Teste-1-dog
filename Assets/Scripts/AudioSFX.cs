@@ -7,7 +7,7 @@ using System;
 
 public class AudioSFX 
 {
-    public AudioClip BonePickup;
+    public AudioClip bonePickup;
     public AudioClip fail;
     public AudioClip levelComplete;
     public AudioClip lifePickup;
