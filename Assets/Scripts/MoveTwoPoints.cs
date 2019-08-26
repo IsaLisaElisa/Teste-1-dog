@@ -24,12 +24,12 @@ public class MoveTwoPoints : MonoBehaviour
        while (true) {
            if (obj.transform.localPosition == pos1.localPosition) {
                nextPos = pos2.localPosition;
-                anim.SetInteger("state", 1);
+                //anim.SetInteger("state", 1);
                 yield return new WaitForSeconds(waitTime);
            }
            if (obj.transform.localPosition == pos2.localPosition) {
                nextPos = pos1.localPosition;
-                anim.SetInteger("state", 2);
+                //anim.SetInteger("state", 2);
                 yield return new WaitForSeconds(waitTime);
            }
            obj.transform.localPosition = Vector3.MoveTowards(obj.transform.localPosition, nextPos, speed * Time.deltaTime);
