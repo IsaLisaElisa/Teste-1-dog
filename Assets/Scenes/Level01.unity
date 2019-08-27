@@ -10466,7 +10466,7 @@ MonoBehaviour:
     fail: {fileID: 8300000, guid: 7667bd91e8759044d91e096f49329c70, type: 3}
     levelComplete: {fileID: 8300000, guid: 3cf165ebacbf3ac4ca071bb2e76e5d18, type: 3}
     lifePickup: {fileID: 8300000, guid: 18aff0303ba08fe47aa6729d26bd822a, type: 3}
-    lifeLost: {fileID: 8300000, guid: 19de9e239e7cb2f41a87555151cef9d0, type: 3}
+    lifeLost: {fileID: 8300000, guid: c721aa32f4d172f488633da285031fd3, type: 3}
 --- !u!114 &1413807563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26499,12 +26499,12 @@ PrefabInstance:
     - target: {fileID: 8521723726735112480, guid: 9398c295e236312498704d3171d30b52,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.04
+      value: 5.69
       objectReference: {fileID: 0}
     - target: {fileID: 8521723726735112480, guid: 9398c295e236312498704d3171d30b52,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.58
+      value: -1.62
       objectReference: {fileID: 0}
     - target: {fileID: 8521723726735112480, guid: 9398c295e236312498704d3171d30b52,
         type: 3}
