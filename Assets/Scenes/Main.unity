@@ -256,11 +256,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Roteiristas - Lis, LLF e Elisa
+  m_Text: 'Roteiristas - Elisa, Larissa e Lisandra
 
-    Designer - LLF
+    Designer - Larissa
 
-    Desenvolvedora - Lis
+    Desenvolvedora - Lisandra
 
     Programadora - Elisa'
 --- !u!222 &77605713
@@ -498,7 +498,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &546272866
 RectTransform:
   m_ObjectHideFlags: 0
